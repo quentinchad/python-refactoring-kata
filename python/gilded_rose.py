@@ -23,7 +23,16 @@ class GildedRose(object):
             if item.name == "Aged Brie":
                 self._increase_quality(item)
 
+            elif item.name == "Backstage passes to a TAFKAL80ETC concert":
+                self._increase_quality(item)
 
+                if item.sell_in < 11:
+                    self._increase_quality(item)
+
+                if item.sell_in < 6:
+                    self._increase_quality(item)
+
+                    
             else:
                 if item.quality < 50:
                     item.quality = item.quality + 1
