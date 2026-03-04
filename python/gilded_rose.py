@@ -34,6 +34,8 @@ class GildedRose(object):
 
             else:
                 self._decrease_quality(item)
+
+            item.sell_in -= 1
            
             if item.sell_in < 0:
                 if item.name != "Aged Brie":
