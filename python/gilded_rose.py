@@ -45,6 +45,9 @@ class GildedRose(object):
                 elif item.name == "Backstage passes to a TAFKAL80ETC concert":
                     item.quality = 0
 
+                else:
+                    self._decrease_quality(item)
+
                         
 
 
